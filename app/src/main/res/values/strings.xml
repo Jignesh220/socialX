@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">socialX</string>
+    <string name="facebook_app_id">863755210931249</string>
+    <string name="fb_login_protocol_scheme">fb863755210931249</string>
+</resources>

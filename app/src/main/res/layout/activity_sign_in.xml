@@ -1,0 +1,153 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#979797"
+  >
+
+  <TextView
+      android:id="@+id/text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#FF0000"
+      android:fontFamily="@font/cantarell"
+      android:paddingStart="30dp"
+      android:paddingTop="30dp"
+      android:paddingBottom="10dp"
+      android:text="SocialX"
+      android:textColor="@color/white"
+      android:textSize="50dp" />
+  <LinearLayout
+      android:id="@+id/l1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button"
+      android:layout_below="@+id/text"
+      android:orientation="horizontal"
+      android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/acme"
+        android:paddingHorizontal="90dp"
+        android:text="Sign in"
+        android:layout_marginStart="-15dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/acme"
+        android:onClick="signUp"
+        android:paddingHorizontal="60dp"
+        android:text="Sign Up" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@drawable/button4"
+      android:layout_below="@+id/l1"
+      android:layout_above="@+id/signInButton"
+      android:layout_marginBottom="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/acme"
+        android:text="Sign in to your\nAccount"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:text="Emai Id"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="xyz@gmail.com"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:text="Password"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/sPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cantarell"
+        android:text="Login with"
+        android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/loginwith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+      <com.google.android.gms.common.SignInButton
+          android:id="@+id/sign_in_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome"/>
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/signInButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/bitton5"
+      android:fontFamily="@font/acme"
+      android:padding="20dp"
+      android:text="Sign In"
+      android:textColor="@color/white" />
+
+
+
+
+
+</RelativeLayout>
